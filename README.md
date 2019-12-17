@@ -22,7 +22,7 @@ This tutorial requires the [Seeed Studio Azure Sphere](https://www.seeedstudio.c
 
 Be sure to plug the Grove Temperature Sensor into one of the I2C connectors on the Grove Shield.
 
-![Azure Sphere with shield](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/azure-sphere-shield.png)
+![Azure Sphere with shield](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/azure-sphere-shield.png)
 
 ## Set up your Development Environment
 
@@ -59,25 +59,25 @@ azure-sphere
 	|- YourAzureSphereApplication
 ```
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-create-new-project.png)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-create-new-project.png)
 
 ### Select Azure Sphere Project Template
 
 Type **sphere** in the search box and select the Azure Sphere Blink template.
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-select-azure-sphere-blink.png)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-select-azure-sphere-blink.png)
 
 ### Configure new Azure Sphere Project
 
 Name the project and set the save location.
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-configure-new-project.png)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-configure-new-project.png)
 
 ### Open the CMakeLists.txt file
 
 CMakelists.txt defines the build process, the files and locations of libraries and more.
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-open-cmakelists.png)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-open-cmakelists.png)
 
 ### Add a Reference to MT3620_Grove_Shield_Library
 
@@ -86,7 +86,7 @@ Two items need to be added:
 1. The source location on the MT3620 Grove Shield library. Note, this is the relative path to the Grove Shield library.
 2. Add MT3620_Grove_Shield_Library to the target_link_libraries definition. This is equivalent to adding a reference.
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-configure-cmakelists.png)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-configure-cmakelists.png)
 
 ## Set the Application Capabilities
 
@@ -191,7 +191,7 @@ int main(int argc, char* argv[])
 2. Ensure you have [claimed](https://docs.microsoft.com/en-au/azure-sphere/install/claim-device?WT.mc_id=github-blog-dglover), [connected](https://docs.microsoft.com/en-au/azure-sphere/install/configure-wifi?WT.mc_id=github-blog-dglover), and [developer enabled](https://docs.microsoft.com/en-au/azure-sphere/install/qs-blink-application?WT.mc_id=github-blog-dglover) your Azure Sphere.
 
 3. Select **GDB Debugger (HLCore)** from the **Select Startup** dropdown.
-	![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-start-application.png)
+	![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-start-application.png)
 4. From Visual Studio, press **F5** to build, deploy, start, and attached the remote debugger to the Azure Sphere.
 
 ### View the Debugger Output
@@ -200,7 +200,7 @@ Open the _Output_ window to view the output from **Log_Debug** statements in _ma
 
 You can do this by using the Visual Studio **Ctrl+Alt+O** keyboard shortcut or click the **Output** tab found along the bottom/right of Visual Studio.
 
-![Visual Studio View Output](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-view-output.png)
+![Visual Studio View Output](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-view-output.png)
 
 ### Set a Debug Breakpoint
 
@@ -208,13 +208,13 @@ Set a debugger breakpoint by clicking in the margin to the left of the line of c
 
 In the **main.c** file set a breakpoint in the margin of the line that reads the Grove temperature and pressure sensor **GroveTempHumiSHT31_Read(sht31);**.
 
- ![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-set-breakpoint.png)
+ ![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-set-breakpoint.png)
 
 ### Stop the Debugger
 
 **Stop** the debugger by using the Visual Studio **Shift+F5** keyboard shortcut or click the **Stop Debugging** icon.
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/vs-stop-debugger.png)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-stop-debugger.png)
 
 ## Azure Sphere Application Cloud Deployment
 
@@ -224,7 +224,7 @@ Now you have learnt how to "Side Load" an application onto Azure Sphere it is ti
 
 Congratulations, you created a secure Internet of Things Azure Sphere application.
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/finished.jpg)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/finished.jpg)
 
 ## Appendix
 
@@ -251,10 +251,10 @@ For more pin definitions see the __mt3620_rdb.h__ in the MT3620_Grove_Shield/MT3
 | Azure Sphere   |  Image  |
 | ---- | ---- |
 | [Azure Sphere MT3620 Development Kit](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html)|
-| [Azure Sphere MT3620 Development Kit Shield](https://www.seeedstudio.com/Grove-Starter-Kit-for-Azure-Sphere-MT3620-Development-Kit.html). <br/> Note, you can also purchase the parts separately. | ![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/seeed-studio-grove-shield-and-sensors.jpg) |
+| [Azure Sphere MT3620 Development Kit Shield](https://www.seeedstudio.com/Grove-Starter-Kit-for-Azure-Sphere-MT3620-Development-Kit.html). <br/> Note, you can also purchase the parts separately. | ![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/seeed-studio-grove-shield-and-sensors.jpg) |
 
 ### Azure Sphere MT3620 Developer Board Pinmap
 
 The full Azure Sphere MT3620 Board Pinmap can be found on the [Azure Sphere MT3620 Development Kit](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html) page.
 
-![](https://raw.githubusercontent.com/gloveboxes/Azure-Sphere-WinHEC-Demo/master/resources/mt3620-dev-board-pinmap.png)
+![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/mt3620-dev-board-pinmap.png)
