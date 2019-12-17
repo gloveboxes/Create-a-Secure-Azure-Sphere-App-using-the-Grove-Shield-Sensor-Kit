@@ -1,5 +1,9 @@
 # Create a Secure Azure Sphere App using the Grove Shield Sensor Kit
 
+![Azure Sphere with shield](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/azure-sphere-shield.png)
+
+Follow me on Twitter [@dglover](https://twitter.com/dglover)
+
 |Author|[Dave Glover](https://developer.microsoft.com/en-us/advocates/dave-glover?WT.mc_id=github-blog-dglover), Microsoft Cloud Developer Advocate |
 |:----|:---|
 |Target Platform | Seeed Studio Azure Sphere MT3620 |
@@ -21,8 +25,6 @@ It comprises a secured, connected, crossover microcontroller unit (MCU), a custo
 This tutorial requires the [Seeed Studio Azure Sphere](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-US-Version-p-3052.html), the [Seeed Studio Grove Shield](https://www.seeedstudio.com/MT3620-Grove-Shield.html), and the [Grove Temperature and Humidity Sensor (SHT31)](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-SHT31.html). These parts are available from many online stores including [Seeed Studio](www.seeedstudio.com).
 
 Be sure to plug the Grove Temperature Sensor into one of the I2C connectors on the Grove Shield.
-
-![Azure Sphere with shield](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/azure-sphere-shield.png)
 
 ## Set up your Development Environment
 
