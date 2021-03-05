@@ -4,12 +4,12 @@
 
 Follow me on Twitter [@dglover](https://twitter.com/dglover)
 
-|Author|[Dave Glover](https://developer.microsoft.com/en-us/advocates/dave-glover?WT.mc_id=github-blog-dglover), Microsoft Cloud Developer Advocate |
+|Author|[Dave Glover](https://developer.microsoft.com/advocates/dave-glover?WT.mc_id=iot-0000-dglover), Microsoft Cloud Developer Advocate |
 |:----|:---|
 |Target Platform | Seeed Studio Azure Sphere MT3620 |
 |Developer Platform | Windows 10 or Ubuntu 18.04 |
 |Azure SDK | Azure Sphere SDK 19.11 or better |
-|Developer Tools| [Visual Studio (The free Community Edition or better)](https://visualstudio.microsoft.com/vs/?WT.mc_id=github-blog-dglover) or [Visual Studio Code (Free OSS)](https://code.visualstudio.com?WT.mc_id=github-blog-dglover)|
+|Developer Tools| [Visual Studio (The free Community Edition or better)](https://visualstudio.microsoft.com/vs/?WT.mc_id=iot-0000-dglover) or [Visual Studio Code (Free OSS)](https://code.visualstudio.com/?WT.mc_id=iot-0000-dglover)|
 |Hardware | [Seeed Studio Grove Shield](https://www.seeedstudio.com/MT3620-Grove-Shield.html), and the [Grove Temperature and Humidity Sensor (SHT31)](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-SHT31.html) |
 |Source Code | https://github.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit|
 |Language| C|
@@ -29,17 +29,17 @@ Be sure to plug the Grove Temperature Sensor into one of the I2C connectors on t
 
 ## Set up your Development Environment
 
-This tutorial assumes Windows 10 and [Visual Studio (The free Community Edition or better)](https://visualstudio.microsoft.com/vs/?WT.mc_id=github-blog-dglover). For now, Azure Sphere templates are only available for Visual Studio. However, you can clone and open this solution on Windows and Ubuntu 18.04 with [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=github-blog-dglover). 
+This tutorial assumes Windows 10 and [Visual Studio (The free Community Edition or better)](https://visualstudio.microsoft.com/vs/?WT.mc_id=iot-0000-dglover). For now, Azure Sphere templates are only available for Visual Studio. However, you can clone and open this solution on Windows and Ubuntu 18.04 with [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=iot-0000-dglover). 
 
 ```bash
 git clone https://github.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit.git
 ```
 
-Follow the Azure Sphere [Overview of set up procedures](https://docs.microsoft.com/en-au/azure-sphere/install/overview?WT.mc_id=github-blog-dglover) guide.
+Follow the Azure Sphere [Overview of set up procedures](https://docs.microsoft.com/azure-sphere/install/overview?WT.mc_id=iot-0000-dglover) guide.
 
 ## Azure Sphere SDK
 
-This tutorial assumes you are using the [Azure Sphere SDK 19.11](https://docs.microsoft.com/en-us/azure-sphere/resources/release-notes-1911?WT.mc_id=github-blog-dglover) or better which uses the CMake Build System.
+This tutorial assumes you are using the [Azure Sphere SDK 19.11](https://docs.microsoft.com/azure-sphere/resources/release-notes-1911?WT.mc_id=iot-0000-dglover) or better which uses the CMake Build System.
 
 This tutorial uses a fork of the Seeed Studio [Grove Shield Library](https://github.com/Seeed-Studio/MT3620_Grove_Shield) that has been updated to support Azure Sphere SDK 19.11.
 
@@ -195,7 +195,7 @@ int main(int argc, char* argv[])
 ## Deploy the Application to the Azure Sphere
 
 1. Connect the Azure Sphere to your computer via USB
-2. Ensure you have [claimed](https://docs.microsoft.com/en-au/azure-sphere/install/claim-device?WT.mc_id=github-blog-dglover), [connected](https://docs.microsoft.com/en-au/azure-sphere/install/configure-wifi?WT.mc_id=github-blog-dglover), and [developer enabled](https://docs.microsoft.com/en-au/azure-sphere/install/qs-blink-application?WT.mc_id=github-blog-dglover) your Azure Sphere.
+2. Ensure you have [claimed](https://docs.microsoft.com/azure-sphere/install/claim-device?WT.mc_id=iot-0000-dglover), [connected](https://docs.microsoft.com/azure-sphere/install/configure-wifi?WT.mc_id=iot-0000-dglover), and [developer enabled](https://docs.microsoft.com/azure-sphere/install/qs-blink-application?WT.mc_id=iot-0000-dglover) your Azure Sphere.
 
 3. Select **GDB Debugger (HLCore)** from the **Select Startup** dropdown.
 	![](https://raw.githubusercontent.com/gloveboxes/Create-a-Secure-Azure-Sphere-App-using-the-Grove-Shield-Sensor-Kit/master/resources/vs-start-application.png)
